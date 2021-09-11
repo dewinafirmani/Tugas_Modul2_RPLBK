@@ -5,15 +5,15 @@ const displayEmojiName = event => alert(event.target.id);
 const emojis = [
   {
     emoji: '😀',
-    name: "test grinning face"
+    name: "wajah tersenyum"
   },
   {
     emoji: '🎉',
-    name: "party popper"
+    name: "hore duar"
   },
   {
     emoji: '💃',
-    name: "woman dancing"
+    name: "joget asik"
   }
 ];
 
@@ -22,7 +22,7 @@ function App() {
   const displayAction = false;
   return(
     <div className="container">
-      <h1 id={greeting}>Hello, World</h1>
+      <h1 id={greeting}>Selamat Datang</h1>
       {displayAction && <p>I am writing JSX</p>}
       <ul>
         {

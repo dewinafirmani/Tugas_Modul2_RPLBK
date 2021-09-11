@@ -5,15 +5,18 @@ const displayEmojiName = event => alert(event.target.id);
 const emojis = [
   {
     emoji: '😀',
-    name: "wajah tersenyum"
+    pesan: "relax, you're doing well",
+    name: "bahagia"
   },
   {
     emoji: '🎉',
-    name: "hore duar"
+    pesan: "get some gifts!",
+    name: "pesta"
   },
   {
     emoji: '💃',
-    name: "joget asik"
+    pesan: "time to refresh",
+    name: "joget"
   }
 ];
 
@@ -23,7 +26,7 @@ function App() {
   return(
     <div className="container">
       <h1 id={greeting}>Selamat Datang</h1>
-      {displayAction && <p>I am writing JSX</p>}
+      {displayAction && <p>Tugas</p>}
       <ul>
         {
           emojis.map(emoji => (
@@ -31,7 +34,7 @@ function App() {
               <button
                 onClick={displayEmojiName}
               >
-                <span role="img" aria-label={emoji.name} id={emoji.name}>{emoji.emoji}</span>
+                <span role="img" aria-label={emoji.pesan} id={emoji.pesan}>{emoji.emoji} <p>{emoji.name}</p></span>
               </button>
             </li>
           ))

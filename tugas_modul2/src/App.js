@@ -6,17 +6,17 @@ const emojis = [
   {
     emoji: '😀',
     pesan: "relax, you're doing well",
-    name: "bahagia"
+    name: "1"
   },
   {
     emoji: '🎉',
     pesan: "get some gifts!",
-    name: "pesta"
+    name: "2"
   },
   {
     emoji: '💃',
     pesan: "time to refresh",
-    name: "joget"
+    name: "3"
   }
 ];
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import './App.css';
 
 const displayEmojiName = event => alert(event.target.id);
@@ -20,7 +20,9 @@ const emojis = [
   }
 ];
 
-function App() {
+function App(props) {
+  const { nama, nim } = props;
+
   const greeting = "greeting";
   const displayAction = false;
   return(
@@ -40,6 +42,10 @@ function App() {
           ))
         }
       </ul>
+      <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
+            <span className="block text-indigo-600">{nama}</span>
+            <span className="block text-indigo-600">{nim}</span>
+            </h2>
     </div>
   )
 }
